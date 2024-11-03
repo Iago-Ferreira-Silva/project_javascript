@@ -43,7 +43,7 @@ function pesquisarFilmes() {
 async function getFilmesFavoritos() {
     if (listaDeFavoritos.length === 0) {
       document.getElementById('filmes').innerHTML = '';
-      document.querySelector('.card_lista-vazia').getElementsByClassName.display = 'flex';
+      document.querySelector('.card_lista-vazia').style.display = 'flex';
     }
 
     if (filtroAtivo.checked) {
@@ -62,7 +62,7 @@ async function getFilmesFavoritos() {
           console.error('Ocorreu um erro  ao obter detalhes dos filmes:', error);
         }
     } else {
-      document.querySelector('.card_lista-vazia').getElementsByClassName.display = 'none';
+      document.querySelector('.card_lista-vazia').style.display = 'none';
       try {
           const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=pt-BR`);
           const data = await response.json();
