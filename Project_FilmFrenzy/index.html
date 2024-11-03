@@ -2,27 +2,37 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Aplicativo de informações do filme</title>
+  <title>Filmes Populares</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/cabecalho.css" />
+    <link rel="stylesheet" href="css/cards.css" />
 </head>
 <body>
-    <div class="container">
-      <div class="search-container">
-        <input type="text" id="movie-name" placeholder="Insira o nome do filme aqui..." value="Quarta-feira">
-        <button id="search-btn">Pesquisar</button>
-      </div>
-      <div id="result"></div>
+  <header class="cabecalho">
+    <h1 class="cabecalho_titulo">Filmes Populares</h1>
+
+    <div class="cabecalho_pesquisa">
+      <input type="text" class="cabecalho_pesquisa-input" placeholder="Digite algum filme para pesquisar..."/>
+      <span class="cabecalho_pesquisa-lupa">
+        <img src="img/search-icon.svg" alt="">
+      </span>
     </div>
 
+    <label class="cabecalho checkbox">
+      <input type="checkbox" id="cabecalho_checkbox"/>
+      Mostrar meus filmes favoritos apenas
+    </label>
+  </header>
 
-
-
-
-
-    <script src="key.js"></script>
-    <script src="index.html"></script>
-
+  <section id="filmes"></section>
+  <section class="card_lista-vazia">Você ainda não adicionou nenhum filme a sua lista de favoritos!</section>
 </body>
 </html>
