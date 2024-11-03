@@ -15,11 +15,7 @@ Neste catálogo de filmes, você encontrará informações detalhadas sobre os m
 - JavaScript 📝
 - HTML5 📄
 - CSS3 💻
-- API da OMDb (Open Movie Database) para dados de filmes 📊
+- API do The Movie Database (TMDB) para dados de filmes 📊
 
 ## API Utilizada:
-OpenMovieDataBase (OMDB)
-
-## Licença:
-
-Este projeto está licenciado sob [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 📜.
+The Movie Database (TMDB)
